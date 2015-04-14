@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+function login()
+{
+  var user=document.getElementById("user").value;
+  var pswd=document.getElementById("pswd").value;
+  
+  if(user=='aaaa' && pswd=='rrrr')
+	  {
+	  alert("Welcome!!"+user);
+	  
+	  }
+  else
+	  {
+	  alert("Invalid Credentials!!");
+	  }
+}
+
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Enter UserName:
+<input type="text" name="user" id="user"><br>
+Enter Password:
+<input type="password" name="pswd" id="pswd"><br>
+<input type="submit" name="submit" value="Login" onclick="login()" >
+
+</body>
+</html>

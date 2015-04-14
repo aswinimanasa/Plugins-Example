@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="cordova.js"/></script>
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false)
+
+
+function onDeviceReady()
+{
+}
+
+
+function showAlert()
+{
+  alert('Welcome!! :)');	
+}
+
+function showBeep()
+{
+navigator.notification.beep(3);
+}
+
+function showVibrate() 
+{
+navigator.notification.vibrate(2000);
+}
+function showBattery() {
+	window.location.href="Battery.html"
+	
+}
+
+</script>
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="text-align: center;background-color: olive;">
+<input type="submit" value="Alert" onclick="showAlert()"><br><br>
+<input type="submit" value="Beep" onclick="showBeep()"><br><br>
+<input type="submit" value="Vibration" onclick="showVibrate()"><br><br> 
+<input type="submit" value="Battery Status" onclick="showBattery()">
+</div>
+</body>
+</html>
